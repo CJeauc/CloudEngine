@@ -2,6 +2,8 @@
 
 CloudEngine is a C++/Opengl second year student project realised as a team of 3 peoples : [William Dewaele](https://github.com/Wdewaele), [Saad Raouf](https://github.com/Synyproxy) and myself, in the given time of 5 months.
 
+![alt text](https://github.com/CJeauc/CloudEngine/blob/master/Screenshots/Editor.PNG)
+
 ## What is this project about
 - Make a game engine from scratch in C++
 - The final objective is to make a fps-puzle game with CloudEngine
@@ -29,6 +31,7 @@ Despite helping my partners, i made the math library ([CloudMath](https://github
 - We are currently halfway through the time given for the project (deadline : 14 june 2019).
 
 ## Build Instruction
-- To build the editeur project, you need to install QT (which is quite heavy).
+- To run the engine you need to set the project "Game" or the project "Editor" as startup project
+- To build the editor project, you need to install QT (which is quite heavy).
 - You can also run the Editor using the [Build](https://github.com/CJeauc/CloudEngine/tree/master/BuildCloudEngine). ([Editor.exe](https://github.com/CJeauc/CloudEngine/blob/master/BuildCloudEngine/Build/Release-x64/Editor/Editor.exe))
 

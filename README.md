@@ -10,6 +10,10 @@ CloudEngine is a C++/Opengl second year student project realised as a team of 3 
 - Use as few libraries as possible (if we want to use something, we have to implemente it)
 - The project counts as our end year project for our second year at Isart Digital Montréal
 
+![](https://media.giphy.com/media/27II2p7JgqbdA65mSD/giphy.gif)
+
+Collision and jump using box collider components and a rigidbody component. The floating cube is a child of the moving and don't have any collider nor physic.
+
 ## Constraints
 - The editor must work on Windows.
 - The engine must use our own mathematics library.
@@ -18,9 +22,6 @@ CloudEngine is a C++/Opengl second year student project realised as a team of 3 
 
 ## My part
 Despite helping my partners, i made the math library ([CloudMath](https://github.com/CJeauc/CloudEngine/tree/master/CloudEngine/CloudMath)), the Entity Component System ([ECS](https://github.com/CJeauc/CloudEngine/tree/master/CloudEngine/Core/include/Core/ECS)), the Physic Engine using Bullet 3 ([Physic](https://github.com/CJeauc/CloudEngine/tree/master/CloudEngine/Physic)) and the components and system needed to the physic to work ([Components](https://github.com/CJeauc/CloudEngine/tree/master/CloudEngine/Core/include/Core/CoreComponent/Physic), [System](https://github.com/CJeauc/CloudEngine/tree/master/CloudEngine/Core/include/Core/CoreSystem/PhysicSystem.h)). I also took care of the resources and singleton management ([Resources Management](https://github.com/CJeauc/CloudEngine/tree/master/CloudEngine/Core/include/Core/Managers), [Singleton Management](https://github.com/CJeauc/CloudEngine/blob/master/CloudEngine/Core/include/Core/Engine/Cloud.h)).
-
-![](https://media.giphy.com/media/27II2p7JgqbdA65mSD/giphy.gif)
-Collision and jump using box collider components and a rigidbody component. The floating cube is a child of the moving and don't have any collider nor physic.
 
 ## Libraries used
 - Bullet

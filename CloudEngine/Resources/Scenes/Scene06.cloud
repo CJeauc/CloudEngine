@@ -1,0 +1,117 @@
+<CloudEngine>
+    <Scene name="Scene06">
+        <GameObject name="GameCamera">
+            <Components>
+                <Component type="Transform">
+                    <Position x="-9.2363625" y="11.41442" z="13.933867"/>
+                    <Rotation x="0.058185406" y="0.91750234" z="-0.14613912" w="0.36530429"/>
+                    <Scale x="1" y="1" z="1"/>
+                </Component>
+            </Components>
+        </GameObject>
+        <GameObject name="cubeWithGravity">
+            <Components>
+                <Component type="MaterialRenderer">
+                    <Shader name="Default"/>
+                    <TextureSlots diffuseTex="BoxDiffuse" specularTex="BoxSpecular"/>
+                </Component>
+                <Component type="Transform">
+                    <Position x="-407.83951" y="115.08059" z="253.42195"/>
+                    <Rotation x="0.48472288" y="0.62532341" z="0.43917593" w="-0.42560434"/>
+                    <Scale x="1" y="1" z="1"/>
+                </Component>
+                <Component type="MeshRenderer">
+                    <Model name="Cube" subMeshes="false"/>
+                </Component>
+                <Component type="PhysicObject">
+                    <RigidBody haveRigidBodyComponent="true" mass="1">
+                        <LinearConstraint x="1" y="1" z="1"/>
+                        <AngularConstraint x="1" y="1" z="1"/>
+                        <Specification isTrigger="false" isKinematic="false"/>
+                    </RigidBody>
+                    <Collider haveColliderComponent="true" shapeType="66">
+                        <Dimensions x="1" y="1" z="1"/>
+                    </Collider>
+                </Component>
+            </Components>
+            <GameObject name="Cube1">
+                <Components>
+                    <Component type="MaterialRenderer">
+                        <Shader name="Default"/>
+                        <TextureSlots diffuseTex="BoxDiffuse" specularTex="BoxSpecular"/>
+                    </Component>
+                    <Component type="Transform">
+                        <Position x="1.5" y="1" z="0"/>
+                        <Rotation x="0" y="0" z="0" w="1"/>
+                        <Scale x="1" y="1" z="1"/>
+                    </Component>
+                    <Component type="MeshRenderer">
+                        <Model name="Cube" subMeshes="false"/>
+                    </Component>
+                    <Component type="PhysicObject">
+                        <RigidBody haveRigidBodyComponent="false" mass="0">
+                            <LinearConstraint x="1" y="1" z="1"/>
+                            <AngularConstraint x="1" y="1" z="1"/>
+                            <Specification isTrigger="false" isKinematic="false"/>
+                        </RigidBody>
+                        <Collider haveColliderComponent="true" shapeType="66">
+                            <Dimensions x="1" y="1" z="1"/>
+                        </Collider>
+                    </Component>
+                </Components>
+            </GameObject>
+        </GameObject>
+        <GameObject name="Rotor">
+            <Components>
+                <Component type="MaterialRenderer">
+                    <Shader name="Default"/>
+                    <TextureSlots diffuseTex="BoxDiffuse" specularTex="BoxSpecular"/>
+                </Component>
+                <Component type="Transform">
+                    <Position x="5" y="2" z="0"/>
+                    <Rotation x="0" y="0" z="0" w="1"/>
+                    <Scale x="1" y="10" z="10"/>
+                </Component>
+                <Component type="MeshRenderer">
+                    <Model name="Cube" subMeshes="false"/>
+                </Component>
+                <Component type="PhysicObject">
+                    <RigidBody haveRigidBodyComponent="false" mass="0">
+                        <LinearConstraint x="1" y="1" z="1"/>
+                        <AngularConstraint x="1" y="1" z="1"/>
+                        <Specification isTrigger="false" isKinematic="false"/>
+                    </RigidBody>
+                    <Collider haveColliderComponent="true" shapeType="66">
+                        <Dimensions x="1" y="1" z="1"/>
+                    </Collider>
+                </Component>
+            </Components>
+        </GameObject>
+        <GameObject name="Plane">
+            <Components>
+                <Component type="MaterialRenderer">
+                    <Shader name="Default"/>
+                    <TextureSlots diffuseTex="BoxDiffuse" specularTex="BoxSpecular"/>
+                </Component>
+                <Component type="Transform">
+                    <Position x="0" y="-2" z="0"/>
+                    <Rotation x="0" y="0" z="0" w="1"/>
+                    <Scale x="50" y="2" z="50"/>
+                </Component>
+                <Component type="MeshRenderer">
+                    <Model name="Cube" subMeshes="false"/>
+                </Component>
+                <Component type="PhysicObject">
+                    <RigidBody haveRigidBodyComponent="false" mass="0">
+                        <LinearConstraint x="1" y="1" z="1"/>
+                        <AngularConstraint x="1" y="1" z="1"/>
+                        <Specification isTrigger="false" isKinematic="false"/>
+                    </RigidBody>
+                    <Collider haveColliderComponent="true" shapeType="66">
+                        <Dimensions x="1" y="1" z="1"/>
+                    </Collider>
+                </Component>
+            </Components>
+        </GameObject>
+    </Scene>
+</CloudEngine>

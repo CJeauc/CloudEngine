@@ -1,0 +1,84 @@
+<CloudEngine>
+    <Scene name="Scene04">
+        <GameObject name="Floor">
+            <Components>
+                <Component type="MaterialRenderer">
+                    <Shader name="Default"/>
+                    <TextureSlots diffuseTex="BoxDiffuse" specularTex="BoxSpecular"/>
+                </Component>
+                <Component type="Transform">
+                    <Position x="0" y="-2" z="0"/>
+                    <Rotation x="0" y="0" z="0" w="1"/>
+                    <Scale x="100" y="0.2" z="100"/>
+                </Component>
+                <Component type="MeshRenderer">
+                    <Model name="Cube" subMeshes="false"/>
+                </Component>
+            </Components>
+        </GameObject>
+        <GameObject name="Cube">
+            <Components>
+                <Component type="MaterialRenderer">
+                    <Shader name="Default"/>
+                    <TextureSlots diffuseTex="BoxDiffuse" specularTex="BoxSpecular"/>
+                </Component>
+                <Component type="Transform">
+                    <Position x="0" y="0" z="0"/>
+                    <Rotation x="0" y="0" z="0" w="1"/>
+                    <Scale x="1" y="1" z="1"/>
+                </Component>
+                <Component type="MeshRenderer">
+                    <Model name="Cube" subMeshes="false"/>
+                </Component>
+            </Components>
+        </GameObject>
+        <GameObject name="Torus">
+            <Components>
+                <Component type="MaterialRenderer">
+                    <Shader name="Default"/>
+                    <TextureSlots diffuseTex="BoxDiffuse" specularTex="BoxSpecular"/>
+                </Component>
+                <Component type="Transform">
+                    <Position x="-3" y="0" z="0"/>
+                    <Rotation x="0" y="0" z="0" w="1"/>
+                    <Scale x="1" y="1" z="1"/>
+                </Component>
+                <Component type="MeshRenderer">
+                    <Model name="Torus" subMeshes="false"/>
+                </Component>
+            </Components>
+        </GameObject>
+        <GameObject name="Sphere">
+            <Components>
+                <Component type="MaterialRenderer">
+                    <Shader name="Default"/>
+                    <TextureSlots diffuseTex="BoxDiffuse" specularTex="BoxSpecular"/>
+                </Component>
+                <Component type="Transform">
+                    <Position x="2" y="0" z="0"/>
+                    <Rotation x="0" y="0" z="0" w="1"/>
+                    <Scale x="1" y="1" z="1"/>
+                </Component>
+                <Component type="MeshRenderer">
+                    <Model name="Sphere" subMeshes="false"/>
+                </Component>
+            </Components>
+        </GameObject>
+        <GameObject name="Cylinder">
+            <Components>
+                <Component type="MaterialRenderer">
+                    <Shader name="Default"/>
+                    <TextureSlots diffuseTex="BoxDiffuse" specularTex="BoxSpecular"/>
+                </Component>
+                <Component type="Transform">
+                    <Position x="5" y="0" z="0"/>
+                    <Rotation x="0" y="0" z="0" w="1"/>
+                    <Scale x="1" y="1" z="1"/>
+                </Component>
+                <Component type="MeshRenderer">
+                    <Model name="Cylinder" subMeshes="false"/>
+                </Component>
+            </Components>
+        </GameObject>
+    </Scene>
+</CloudEngine>

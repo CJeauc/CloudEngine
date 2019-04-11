@@ -1,0 +1,34 @@
+<Scene02>
+    <GameObject>
+        <Name>cube1</Name>
+        <Components>
+            <Component type="Transform">
+                <Position x="0" y="-1" z="0"/>
+            </Component>
+        </Components>
+        <GameObject>
+            <Name>cube2</Name>
+            <Components>
+                <Component type="Transform">
+                    <Position x="0" y="1" z="0"/>
+                </Component>
+            </Components>
+        </GameObject>
+        <GameObject>
+            <Name>cube4</Name>
+            <Components>
+                <Component type="Transform">
+                    <Position x="-1" y="0" z="0"/>
+                </Component>
+            </Components>
+        </GameObject>
+    </GameObject>
+    <GameObject>
+        <Name>cube3</Name>
+        <Components>
+            <Component type="Transform">
+                <Position x="1" y="0" z="0"/>
+            </Component>
+        </Components>
+    </GameObject>
+</Scene02>

@@ -1,0 +1,36 @@
+<CloudEngine>
+    <Scene name="Scene03">
+        <GameObject name="cube1">
+            <Components>
+                <Component type="MaterialRenderer">
+                    <Shader name="Default"/>
+                    <TextureSlots diffuseTex="BoxDiffuse" specularTex="BoxSpecular"/>
+                </Component>
+                <Component type="Transform">
+                    <Position x="0" y="-1" z="0"/>
+                    <Rotation x="0" y="0" z="0" w="1"/>
+                    <Scale x="1" y="1" z="1"/>
+                </Component>
+                <Component type="MeshRenderer">
+                    <Model name="Cube" subMeshes="false"/>
+                </Component>
+            </Components>
+            <GameObject name="cube2">
+                <Components>
+                    <Component type="MaterialRenderer">
+                        <Shader name="Default"/>
+                        <TextureSlots diffuseTex="BoxDiffuse" specularTex="BoxSpecular"/>
+                    </Component>
+                    <Component type="Transform">
+                        <Position x="0" y="1" z="0"/>
+                        <Rotation x="0" y="0" z="0" w="1"/>
+                        <Scale x="1" y="1" z="1"/>
+                    </Component>
+                    <Component type="MeshRenderer">
+                        <Model name="Cube" subMeshes="false"/>
+                    </Component>
+                </Components>
+            </GameObject>
+        </GameObject>
+    </Scene>
+</CloudEngine>

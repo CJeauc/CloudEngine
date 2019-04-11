@@ -1,0 +1,14 @@
+<Root>
+    <IntValue>10</IntValue>
+    <FloatValue>3.1400001</FloatValue>
+    <List>
+        <Item>0</Item>
+        <Item>2</Item>
+        <Item>4</Item>
+        <Item>6</Item>
+        <Item>8</Item>
+        <Item>10</Item>
+        <Item>12</Item>
+        <Item>13</Item>
+    </List>
+</Root>

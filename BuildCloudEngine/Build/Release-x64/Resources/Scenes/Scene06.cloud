@@ -1,0 +1,36 @@
+<CloudEngine>
+    <Scene name="Scene06">
+        <GameObject name="Nano">
+            <Components>
+                <Component type="MaterialRenderer">
+                    <Shader name="Default"/>
+                    <TextureSlots diffuseTex="leg_dif.png" specularTex="leg_dif.png"/>
+                </Component>
+                <Component type="Transform">
+                    <Position x="0" y="0" z="-10"/>
+                    <Rotation x="0" y="0" z="0" w="1"/>
+                    <Scale x="0.30000001" y="0.30000001" z="0.30000001"/>
+                </Component>
+                <Component type="MeshRenderer">
+                    <Model name="Nano" subMeshes="true"/>
+                </Component>
+            </Components>
+            <GameObject name="Cube">
+                <Components>
+                    <Component type="Transform">
+                        <Position x="5" y="1" z="-5"/>
+                        <Rotation x="0" y="0" z="0" w="1"/>
+                        <Scale x="1" y="1" z="1"/>
+                    </Component>
+                    <Component type="MeshRenderer">
+                        <Model name="Cube" subMeshes="false"/>
+                    </Component>
+                    <Component type="MaterialRenderer">
+                        <Shader name="Default"/>
+                        <TextureSlots diffuseTex="BoxDiffuse" specularTex="BoxSpecular"/>
+                    </Component>
+                </Components>
+            </GameObject>
+        </GameObject>
+    </Scene>
+</CloudEngine>

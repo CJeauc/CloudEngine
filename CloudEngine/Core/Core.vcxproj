@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{FE017431-7FEE-4A7F-9F4B-C0FC374D1473}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Core</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Build\$(Configuration)-$(Platform)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\$(Configuration)-$(Platform)\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)CloudMath\include;$(SolutionDir)Rendering\include;$(SolutionDir)Tools\include;$(SolutionDir)Physic\include;$(ProjectDir)include;$(SolutionDir)Dependencies\GLFW\$(Platform)\include;$(SolutionDir)Glad\include;$(SolutionDir)Dependencies\Bullet3\include;$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir)src;$(SourcePath)</SourcePath>
+    <LibraryPath>$(SolutionDir)Build\$(Configuration)-$(Platform)\CloudMath;$(SolutionDir)Build\$(Configuration)-$(Platform)\Rendering;$(SolutionDir)Build\$(Configuration)-$(Platform)\Tools;$(SolutionDir)Build\$(Configuration)-$(Platform)\Physic;$(SolutionDir)Dependencies\GLFW\$(Platform)\lib;$(SolutionDir)Build\$(Configuration)-$(Platform)\Glad;$(SolutionDir)Dependencies\Assimp\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Build\$(Configuration)-$(Platform)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\$(Configuration)-$(Platform)\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)CloudMath\include;$(SolutionDir)Rendering\include;$(SolutionDir)Tools\include;$(SolutionDir)Physic\include;$(ProjectDir)include;$(SolutionDir)Dependencies\GLFW\$(Platform)\include;$(SolutionDir)Glad\include;$(SolutionDir)Dependencies\Bullet3\include;$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir)src;$(SourcePath)</SourcePath>
+    <LibraryPath>$(SolutionDir)Build\$(Configuration)-$(Platform)\CloudMath;$(SolutionDir)Build\$(Configuration)-$(Platform)\Rendering;$(SolutionDir)Build\$(Configuration)-$(Platform)\Tools;$(SolutionDir)Build\$(Configuration)-$(Platform)\Physic;$(SolutionDir)Dependencies\GLFW\$(Platform)\lib;$(SolutionDir)Build\$(Configuration)-$(Platform)\Glad;$(SolutionDir)Dependencies\Assimp\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Build\$(Configuration)-$(Platform)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\$(Configuration)-$(Platform)\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)CloudMath\include;$(SolutionDir)Rendering\include;$(SolutionDir)Tools\include;$(SolutionDir)Physic\include;$(ProjectDir)include;$(SolutionDir)Dependencies\GLFW\$(Platform)\include;$(SolutionDir)Glad\include;$(SolutionDir)Dependencies\Bullet3\include;$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir)src;$(SourcePath)</SourcePath>
+    <LibraryPath>$(SolutionDir)Build\$(Configuration)-$(Platform)\CloudMath;$(SolutionDir)Build\$(Configuration)-$(Platform)\Rendering;$(SolutionDir)Build\$(Configuration)-$(Platform)\Tools;$(SolutionDir)Build\$(Configuration)-$(Platform)\Physic;$(SolutionDir)Dependencies\GLFW\$(Platform)\lib;$(SolutionDir)Build\$(Configuration)-$(Platform)\Glad;$(SolutionDir)Dependencies\Assimp\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Build\$(Configuration)-$(Platform)\$(ProjectName)\</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\$(Configuration)-$(Platform)\$(ProjectName)\</IntDir>
+    <IncludePath>$(SolutionDir)CloudMath\include;$(SolutionDir)Rendering\include;$(SolutionDir)Tools\include;$(SolutionDir)Physic\include;$(ProjectDir)include;$(SolutionDir)Dependencies\GLFW\$(Platform)\include;$(SolutionDir)Glad\include;$(SolutionDir)Dependencies\Bullet3\include;$(IncludePath)</IncludePath>
+    <SourcePath>$(ProjectDir)src;$(SourcePath)</SourcePath>
+    <LibraryPath>$(SolutionDir)Build\$(Configuration)-$(Platform)\CloudMath;$(SolutionDir)Build\$(Configuration)-$(Platform)\Rendering;$(SolutionDir)Build\$(Configuration)-$(Platform)\Tools;$(SolutionDir)Build\$(Configuration)-$(Platform)\Physic;$(SolutionDir)Dependencies\GLFW\$(Platform)\lib;$(SolutionDir)Build\$(Configuration)-$(Platform)\Glad;$(SolutionDir)Dependencies\Assimp\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>CORE_EXPORTS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeaderFile>Core/stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>CloudMath.lib;Tools.lib;Rendering.lib;Physic.lib;Glad.lib;glfw3.lib;assimp-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>CORE_EXPORTS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeaderFile>Core/stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>CloudMath.lib;Tools.lib;Rendering.lib;Physic.lib;Glad.lib;glfw3.lib;assimp-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>CORE_EXPORTS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeaderFile>Core/stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>CloudMath.lib;Tools.lib;Rendering.lib;Physic.lib;Glad.lib;glfw3.lib;assimp-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>CORE_EXPORTS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeaderFile>Core/stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>CloudMath.lib;Tools.lib;Rendering.lib;Physic.lib;Glad.lib;glfw3.lib;assimp-vc140-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Core.h" />
+    <ClInclude Include="include\Core\CoreAPI.h" />
+    <ClInclude Include="include\Core\CoreComponent\CameraComponent.h" />
+    <ClInclude Include="include\Core\CoreComponent\LightComponent.h" />
+    <ClInclude Include="include\Core\CoreComponent\Physic\CapsuleCollider.h" />
+    <ClInclude Include="include\Core\CoreComponent\Physic\PhysicObject.h" />
+    <ClInclude Include="include\Core\CoreComponent\Physic\RayCastEnabler.h" />
+    <ClInclude Include="include\Core\CoreEntity\Daemon.h" />
+    <ClInclude Include="include\Core\CoreComponent\Physic\ACollider.h" />
+    <ClInclude Include="include\Core\CoreComponent\Physic\BoxCollider.h" />
+    <ClInclude Include="include\Core\CoreComponent\Physic\RigidBody.h" />
+    <ClInclude Include="include\Core\CoreComponent\Physic\SphereCollider.h" />
+    <ClInclude Include="include\Core\CoreSystem\FPCameraSystem.h" />
+    <ClInclude Include="include\Core\CoreComponent\MaterialRenderer.h" />
+    <ClInclude Include="include\Core\CoreComponent\MeshRenderer.h" />
+    <ClInclude Include="include\Core\CoreComponent\Transform.h" />
+    <ClInclude Include="include\Core\CoreEntity\GameObject.h" />
+    <ClInclude Include="include\Core\CoreSystem\CameraSystem.h" />
+    <ClInclude Include="include\Core\CoreSystem\GamePlay\FirstPersonControllerSystem.h" />
+    <ClInclude Include="include\Core\CoreSystem\InputTestSystem.h" />
+    <ClInclude Include="include\Core\CoreSystem\LightSwitcherSystem.h" />
+    <ClInclude Include="include\Core\CoreSystem\MaterialSystem.h" />
+    <ClInclude Include="include\Core\CoreSystem\PhysicSystem.h" />
+    <ClInclude Include="include\Core\CoreSystem\RenderingSystem.h" />
+    <ClInclude Include="include\Core\CoreSystem\WorldTransformSystem.h" />
+    <ClInclude Include="include\Core\ECS\Component\AComponent.h" />
+    <ClInclude Include="include\Core\ECS\Component\Component.h" />
+    <ClInclude Include="include\Core\ECS\Component\ComponentManager.h" />
+    <ClInclude Include="include\Core\ECS\ECS.h" />
+    <ClInclude Include="include\Core\ECS\Entity\AEntity.h" />
+    <ClInclude Include="include\Core\ECS\Entity\Entity.h" />
+    <ClInclude Include="include\Core\ECS\Entity\EntityManager.h" />
+    <ClInclude Include="include\Core\ECS\System\ASystem.h" />
+    <ClInclude Include="include\Core\ECS\System\System.h" />
+    <ClInclude Include="include\Core\ECS\System\SystemManager.h" />
+    <ClInclude Include="include\Core\ECS\System\SystemPriorityDefine.h" />
+    <ClInclude Include="include\Core\CoreSystem\UniformRenderingSystem.h" />
+    <ClInclude Include="include\Core\ECS\Types.h" />
+    <ClInclude Include="include\Core\ECS\Utils\Algorithm.h" />
+    <ClInclude Include="include\Core\Engine\Cloud.h" />
+    <ClInclude Include="include\Core\Engine\CloudEngine.h" />
+    <ClInclude Include="include\Core\Engine\editor.h" />
+    <ClInclude Include="include\Core\Engine\Input.h" />
+    <ClInclude Include="include\Core\Engine\Key.h" />
+    <ClInclude Include="include\Core\Managers\Register.h" />
+    <ClInclude Include="include\Core\Managers\TypeFunctions.h" />
+    <ClInclude Include="include\Core\Managers\ResourceManager.h" />
+    <ClInclude Include="include\Core\Scene\Scene.h" />
+    <ClInclude Include="include\Core\Scene\SceneManager.h" />
+    <ClInclude Include="include\Core\Scene\SceneNode.h" />
+    <ClInclude Include="include\Core\Serializer\TinyXML2.h" />
+    <ClInclude Include="include\Core\stdafx.h" />
+    <ClInclude Include="include\Core\Window\Window.h" />
+    <ClInclude Include="include\Core\ECS\FamilyTypeId.h" />
+    <ClInclude Include="include\Core\CoreComponent\UniformRendering.h" />
+    <ClInclude Include="include\Core\CoreComponent\GamePlay\FirstPersonController.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CoreComponent\CameraComponent.cpp" />
+    <ClCompile Include="src\CoreComponent\GamePlay\FirstPersonController.cpp" />
+    <ClCompile Include="src\CoreComponent\LightComponent.cpp" />
+    <ClCompile Include="src\CoreComponent\MaterialRenderer.cpp" />
+    <ClCompile Include="src\CoreComponent\MeshRenderer.cpp" />
+    <ClCompile Include="src\CoreComponent\Physic\ACollider.cpp" />
+    <ClCompile Include="src\CoreComponent\Physic\BoxCollider.cpp" />
+    <ClCompile Include="src\CoreComponent\Physic\CapsuleCollider.cpp" />
+    <ClCompile Include="src\CoreComponent\Physic\PhysicObject.cpp" />
+    <ClCompile Include="src\CoreComponent\Physic\RayCastEnabler.cpp" />
+    <ClCompile Include="src\CoreComponent\Physic\RigidBody.cpp" />
+    <ClCompile Include="src\CoreComponent\Physic\SphereCollider.cpp" />
+    <ClCompile Include="src\CoreComponent\Transform.cpp" />
+    <ClCompile Include="src\CoreComponent\UniformRendering.cpp" />
+    <ClCompile Include="src\CoreEntity\Daemon.cpp" />
+    <ClCompile Include="src\CoreEntity\GameObject.cpp" />
+    <ClCompile Include="src\CoreSystem\CameraSystem.cpp" />
+    <ClCompile Include="src\CoreSystem\FPCameraSystem.cpp" />
+    <ClCompile Include="src\CoreSystem\GamePlay\FirstPersonControllerSystem.cpp" />
+    <ClCompile Include="src\CoreSystem\InputTestSystem.cpp" />
+    <ClCompile Include="src\CoreSystem\LightSwitcherSystem.cpp" />
+    <ClCompile Include="src\CoreSystem\MaterialSystem.cpp" />
+    <ClCompile Include="src\CoreSystem\PhysicSystem.cpp" />
+    <ClCompile Include="src\CoreSystem\RenderingSystem.cpp" />
+    <ClCompile Include="src\CoreSystem\UniformRenderingSystem.cpp" />
+    <ClCompile Include="src\CoreSystem\WorldTransformSystem.cpp" />
+    <ClCompile Include="src\ECS\Component\AComponent.cpp" />
+    <ClCompile Include="src\ECS\Component\ComponentManager.cpp" />
+    <ClCompile Include="src\ECS\ECS.cpp" />
+    <ClCompile Include="src\ECS\Entity\AEntity.cpp" />
+    <ClCompile Include="src\ECS\Entity\EntityManager.cpp" />
+    <ClCompile Include="src\ECS\System\ASystem.cpp" />
+    <ClCompile Include="src\ECS\System\SystemManager.cpp" />
+    <ClCompile Include="src\Engine\Cloud.cpp" />
+    <ClCompile Include="src\Engine\CloudEngine.cpp" />
+    <ClCompile Include="src\Engine\Input.cpp" />
+    <ClCompile Include="src\Scene\Scene.cpp" />
+    <ClCompile Include="src\Scene\SceneManager.cpp" />
+    <ClCompile Include="src\Scene\SceneNode.cpp" />
+    <ClCompile Include="src\Serializer\TinyXML2.cpp" />
+    <ClCompile Include="src\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\Window\Window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CloudMath\CloudMath.vcxproj">
+      <Project>{e3ce3589-dbe5-44f9-8fff-7abcc3ec4ab3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Glad\Glad.vcxproj">
+      <Project>{edabcbbb-750b-4d0d-9e4a-ab8b5361dd56}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Physic\Physic.vcxproj">
+      <Project>{a4f7b897-ccfe-48bd-a36b-7151b4ddcf55}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Rendering\Rendering.vcxproj">
+      <Project>{e78aab63-1e75-449d-940d-b77557f34207}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.vcxproj">
+      <Project>{756a9a64-1ed7-45d6-9c04-1e228cefb568}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

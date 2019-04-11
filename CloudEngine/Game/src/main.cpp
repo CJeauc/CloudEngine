@@ -60,51 +60,51 @@ int main()
 
 	while (engine.Running())
 	{
-		// if (rb)
-		// {
-		// 	if (Core::Input::GetKeyDown(Core::Key::KEY_B))
-		// 		rb->GetPhysicObject()->GetTransform()->SetPosition({0, 10, 0});
-		//
-		// 	if (Core::Input::GetKeyDown(Core::Key::KEY_C) && rb->IsGrounded())
-		// 		rb->AddForce({0.f, 8.f, 0.f});
-		//
-		// 	if (Core::Input::GetKey(Core::Key::KEY_RIGHT))
-		// 		rb->SetLinearVelocity({
-		// 			(rb->GetLinearVelocity().x + 0.2f) <= 5.f ? (rb->GetLinearVelocity().x + 0.2f) : 5.f,
-		// 			rb->GetLinearVelocity().y,
-		// 			rb->GetLinearVelocity().z
-		// 		});
-		//
-		// 	if (Core::Input::GetKey(Core::Key::KEY_LEFT))
-		// 		rb->SetLinearVelocity({
-		// 			(rb->GetLinearVelocity().x - 0.2f) >= -5.f ? (rb->GetLinearVelocity().x - 0.2f) : -5.f,
-		// 			rb->GetLinearVelocity().y,
-		// 			rb->GetLinearVelocity().z
-		// 		});
-		//
-		// 	if (Core::Input::GetKey(Core::Key::KEY_DOWN))
-		// 		rb->SetLinearVelocity({
-		// 			rb->GetLinearVelocity().x,
-		// 			rb->GetLinearVelocity().y,
-		// 			(rb->GetLinearVelocity().z + 0.2f) <= 5.f ? (rb->GetLinearVelocity().z + 0.2f) : 5.f
-		// 		});
-		//
-		// 	if (Core::Input::GetKey(Core::Key::KEY_UP))
-		// 		rb->SetLinearVelocity({
-		// 			rb->GetLinearVelocity().x,
-		// 			rb->GetLinearVelocity().y,
-		// 			(rb->GetLinearVelocity().z - 0.2f) >= -5.f ? (rb->GetLinearVelocity().z - 0.2f) : -5.f
-		// 		});
-		//
-		// 	if (Core::Input::GetKeyUp(Core::Key::KEY_RIGHT))
-		// 		rb->SetLinearVelocity({0.2f, rb->GetLinearVelocity().y, rb->GetLinearVelocity().z});
-		// 	if (Core::Input::GetKeyUp(Core::Key::KEY_LEFT))
-		// 		rb->SetLinearVelocity({-0.2f, rb->GetLinearVelocity().y, rb->GetLinearVelocity().z});
-		// 	if (Core::Input::GetKeyUp(Core::Key::KEY_DOWN))
-		// 		rb->SetLinearVelocity({rb->GetLinearVelocity().x, rb->GetLinearVelocity().y, 0.2f});
-		// 	if (Core::Input::GetKeyUp(Core::Key::KEY_UP))
-		// 		rb->SetLinearVelocity({rb->GetLinearVelocity().x, rb->GetLinearVelocity().y, -0.2f});
-		// }
+		 if (rb)
+		 {
+		 	if (Core::Input::GetKeyDown(Core::Key::KEY_B))
+		 		rb->GetPhysicObject()->GetTransform()->SetPosition({0, 10, 0});
+		
+		 	if (Core::Input::GetKeyDown(Core::Key::KEY_C) && rb->IsGrounded())
+		 		rb->AddForce({0.f, 8.f, 0.f});
+		
+		 	if (Core::Input::GetKey(Core::Key::KEY_RIGHT))
+		 		rb->SetLinearVelocity({
+		 			(rb->GetLinearVelocity().x + 0.2f) <= 5.f ? (rb->GetLinearVelocity().x + 0.2f) : 5.f,
+		 			rb->GetLinearVelocity().y,
+		 			rb->GetLinearVelocity().z
+		 		});
+		
+		 	if (Core::Input::GetKey(Core::Key::KEY_LEFT))
+		 		rb->SetLinearVelocity({
+		 			(rb->GetLinearVelocity().x - 0.2f) >= -5.f ? (rb->GetLinearVelocity().x - 0.2f) : -5.f,
+		 			rb->GetLinearVelocity().y,
+		 			rb->GetLinearVelocity().z
+		 		});
+		
+		 	if (Core::Input::GetKey(Core::Key::KEY_DOWN))
+		 		rb->SetLinearVelocity({
+		 			rb->GetLinearVelocity().x,
+		 			rb->GetLinearVelocity().y,
+		 			(rb->GetLinearVelocity().z + 0.2f) <= 5.f ? (rb->GetLinearVelocity().z + 0.2f) : 5.f
+		 		});
+		
+		 	if (Core::Input::GetKey(Core::Key::KEY_UP))
+		 		rb->SetLinearVelocity({
+		 			rb->GetLinearVelocity().x,
+		 			rb->GetLinearVelocity().y,
+		 			(rb->GetLinearVelocity().z - 0.2f) >= -5.f ? (rb->GetLinearVelocity().z - 0.2f) : -5.f
+		 		});
+		
+		 	if (Core::Input::GetKeyUp(Core::Key::KEY_RIGHT))
+		 		rb->SetLinearVelocity({0.2f, rb->GetLinearVelocity().y, rb->GetLinearVelocity().z});
+		 	if (Core::Input::GetKeyUp(Core::Key::KEY_LEFT))
+		 		rb->SetLinearVelocity({-0.2f, rb->GetLinearVelocity().y, rb->GetLinearVelocity().z});
+		 	if (Core::Input::GetKeyUp(Core::Key::KEY_DOWN))
+		 		rb->SetLinearVelocity({rb->GetLinearVelocity().x, rb->GetLinearVelocity().y, 0.2f});
+		 	if (Core::Input::GetKeyUp(Core::Key::KEY_UP))
+		 		rb->SetLinearVelocity({rb->GetLinearVelocity().x, rb->GetLinearVelocity().y, -0.2f});
+		 }
 
 		engine.Frame();
 	}
